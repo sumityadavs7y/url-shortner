@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 import os
 from flask_cors import CORS
 
@@ -10,12 +10,13 @@ from resources.url_shortner import URLShortner
 from resources.url import URL
 from resources.search import Search
 
-# load_dotenv()
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 # configs will be placed here
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
+    'SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 api = Api(app)
 
