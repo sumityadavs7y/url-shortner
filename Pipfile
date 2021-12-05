@@ -13,6 +13,7 @@ beautifulsoup4 = "*"
 urllib3 = "*"
 python-dotenv = "*"
 flask-cors = "*"
+gunicorn = "*"
 
 [dev-packages]
 autopep8 = "*"
