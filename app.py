@@ -31,7 +31,8 @@ api.add_resource(URLShortner, '/url')
 api.add_resource(Search, '/search/<keyword>')
 api.add_resource(URL, '/<short_url>')
 
+db.init_app(app)
+
 if __name__ == '__main__':
-    db.init_app(app)
     app.run(port=5000)
     # app.run(port=5000, debug=True)
