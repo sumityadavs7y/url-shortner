@@ -6,6 +6,11 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-restful = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+validators = "*"
+beautifulsoup4 = "*"
+urllib3 = "*"
 
 [dev-packages]
 
