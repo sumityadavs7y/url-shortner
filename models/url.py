@@ -39,7 +39,7 @@ class URLModel(db.Model):
 
     @classmethod
     def find_by_title(cls, keyword):
-        return cls.query.filter(cls.title.like(f'%{keyword}%'))
+        return cls.query.filter(cls.title.ilike(f'%{keyword}%'))
 
     @classmethod
     def find_by_short_url(cls, short_url):
