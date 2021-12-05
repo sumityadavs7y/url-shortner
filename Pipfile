@@ -11,8 +11,10 @@ flask-sqlalchemy = "*"
 validators = "*"
 beautifulsoup4 = "*"
 urllib3 = "*"
+python-dotenv = "*"
 
 [dev-packages]
+autopep8 = "*"
 
 [requires]
 python_version = "3.9"
