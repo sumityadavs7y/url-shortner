@@ -12,6 +12,7 @@ validators = "*"
 beautifulsoup4 = "*"
 urllib3 = "*"
 python-dotenv = "*"
+flask-cors = "*"
 
 [dev-packages]
 autopep8 = "*"
