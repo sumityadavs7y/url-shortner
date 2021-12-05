@@ -15,7 +15,7 @@ Say the term “Python”, API should return all pages which have a partial or f
 | `/search/<keyword>`      | `GET`      |   None |None|`"{urls":[array of url details similar to output of '/url']}`|`{"urls": [{"id": 1,"main_url": "https://www.google.com/","short_url": "http://localhost:5000/liUbsv","hits": 4,"hourly_hits": 4,"title": "Google"},{"id": 2,"main_url": "https://www.google.com/","short_url": "http://localhost:5000/CPcljp","hits": 16,"hourly_hits": 2,"title": "Google"}]}`|
 | `/<short_url>` | `GET`      |    None | None| Redirect to their respective main url| None|
 
-for example API endpoints postman collection is also added to the repository.
+for example API endpoints postman collection is also added to the repository. Can be seen [here](https://github.com/sumityadavs7y/url-shortner/blob/a742abe01f092422d6199d49049165ba99662d46/Url Shortner.postman_collection.json).
 
 ## Dependencies
 
