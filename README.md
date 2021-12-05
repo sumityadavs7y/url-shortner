@@ -15,6 +15,8 @@ Say the term “Python”, API should return all pages which have a partial or f
 | `/search/<keyword>`      | `GET`      |   None |None|`"{urls":[array of url details similar to output of '/url']}`|`{"urls": [{"id": 1,"main_url": "https://www.google.com/","short_url": "http://localhost:5000/liUbsv","hits": 4,"hourly_hits": 4,"title": "Google"},{"id": 2,"main_url": "https://www.google.com/","short_url": "http://localhost:5000/CPcljp","hits": 16,"hourly_hits": 2,"title": "Google"}]}`|
 | `/<short_url>` | `GET`      |    None | None| Redirect to their respective main url| None|
 
+for example API endpoints postman collection is also added to the repository.
+
 ## Dependencies
 
 ##### Following are the external libraries used:
@@ -52,4 +54,4 @@ pipenv run python app.py
 
 Currently deployed at heroku. Can visit [here](https://url-shortner-sumit.herokuapp.com/).
 
-
+for the current deployment Flask and PostgreSQL is used

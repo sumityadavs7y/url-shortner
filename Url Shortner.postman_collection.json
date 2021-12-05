@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Url Shortner",
+		"_postman_id": "c08660c3-7e54-f45e-a857-776aaa43fca2",
+		"description": "Write an API for a URL shortener service with three components.\r\n- Create an API that should accept a long URL and return a short URL. API doesn’t require authentication.\r\n- Url shortener service should store metadata about short URLs like the total number of hits, hourly hits. - An API with a shortened URL should return the data.\r\n- API should have an endpoint for search. Search will return results matching the title of the URL.\r\nSay the term “Python”, API should return all pages which have a partial or full match for the term.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "url_shortner",
+			"request": {
+				"url": "https://url-shortner-sumit.herokuapp.com//url",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\":\"https://www.google.com/\"\n}"
+				},
+				"description": "send the url and get shorten url for the same"
+			},
+			"response": []
+		},
+		{
+			"name": "visit short url",
+			"request": {
+				"url": "https://url-shortner-sumit.herokuapp.com/pvVoqw",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\":\"https://www.google.com/\"\n}"
+				},
+				"description": "visiting the short url"
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"url": "https://url-shortner-sumit.herokuapp.com/search/google",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\":\"https://www.google.com/\"\n}"
+				},
+				"description": "search for page title (partialy or fully matched)"
+			},
+			"response": []
+		}
+	]
+}
