@@ -16,7 +16,7 @@ app = Flask(__name__)
 CORS(app)
 # configs will be placed here
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
-    'SQLALCHEMY_DATABASE_URI')
+    'SQLALCHEMY_DATABASE_URI', 'sqlite:///data.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 api = Api(app)
 
